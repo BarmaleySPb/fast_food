@@ -1,17 +1,16 @@
 package dish.service;
 
-import domain.model.Dish;
-
-import java.util.List;
-import java.util.Optional;
+import domain.model.dto.DishDTO;
 
 public interface DishService {
 
-    Dish add(Dish dish);
+    void save(DishDTO dishDTO);
 
-    void delete(Dish dish);
+    Iterable<DishDTO> findAll();
 
-    List<Dish> findAll();
+    DishDTO findById(int id);
 
-    Optional<Dish> findById(int id);
+    void deleteById(int id);
+
+    void update(int id, DishDTO dishDto);
 }

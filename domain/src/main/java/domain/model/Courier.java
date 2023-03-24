@@ -9,6 +9,8 @@ import lombok.*;
 @Builder
 public class Courier {
     private int id;
+
     private String name;
+
     private String phone;
 }

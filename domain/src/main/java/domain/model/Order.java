@@ -14,11 +14,17 @@ import java.util.Objects;
 public class Order {
 
     private int id;
+
     private int total;
+
     private String address;
-    private LocalDateTime created = LocalDateTime.now();
+
+    private final LocalDateTime created = LocalDateTime.now();
+
     private Customer customer;
+
     private Courier courier;
+
     private List<Dish> dishList;
 
     @Override
